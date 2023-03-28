@@ -2,6 +2,9 @@ body {
 	background-color: #f4f4f4;
 	font-family: 'Lato', sans-serif;
 	background-image: url('background.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 h1 {
@@ -76,4 +79,10 @@ input[type="text"], input[type="date"] {
 
 #reset-button:hover {
 	background-color: #EE4B2B;
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		background-size: contain;
+	}
 }
