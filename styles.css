@@ -1,7 +1,7 @@
 body {
 	background-color: #f4f4f4;
 	font-family: 'Lato', sans-serif;
-	background-image: url('/static/background.jpg');
+	background-image: url('background.jpg');
 }
 
 h1 {
