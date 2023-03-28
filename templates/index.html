@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Activity Tracksheet</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+	<h1>Activity Tracksheet</h1>
+	<form action="/add_pixel" method="POST">
+		<label for="date">Date of Activity</label>
+		<input type="date" id="date" name="date" onchange="updateResetDate()">
+		<label for="quantity">Number of Hours</label>
+		<input type="text" id="quantity" name="quantity" placeholder="Enter a number">
+		<input type="submit" value="Add Activity" onclick="displayMessage('Pixel added successfully!');" id="add-button">
+	</form>
+
+	<form action="/reset_activity" method="POST">
+		<input type="hidden" id="reset-date" name="date">
+		<input type="submit" value="Reset Activity" onclick="displayMessage('Activity reset successfully!');" id="reset-button">
+	</form>
+
+	<script type="text/javascript" src="/static/script.js"></script>
+</body>
+</html>
