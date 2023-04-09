@@ -79,8 +79,8 @@ input[type="text"], input[type="date"] {
 	background-color: #EE4B2B;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
 	body {
-		background-size: contain;
+		background-image: url("bg2.jpg")
 	}
 }
